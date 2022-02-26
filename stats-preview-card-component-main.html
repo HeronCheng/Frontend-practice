@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Stats preview card component</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Inter&family=Lexend+Deca&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200;700&display=swap');
+    .attribution { font-size: 11px; text-align: center;margin-top: 10px;color: hsla(0, 0%, 100%, 0.6) }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    body{background-color: hsl(233, 47%, 7%);}
+    .outside{width: 1000px;margin-top: 180px;margin-left: auto;margin-right: auto;background-color: hsl(244, 38%, 16%);display: flex;
+    border-radius: 5px;}
+    .inside{flex: auto;}
+    img{width:470px;border-radius:0px 5px 5px 0px ;flex: none;filter:sepia() saturate(600%) hue-rotate(245deg) brightness(.7)
+      opacity(0.7) contrast(0.8);}
+    .title{width: 380px;font-size: 32px;text-align: left;font-family: 'Inter', sans-serif;font-weight: 700;
+    margin-left: auto;margin-right: auto;margin-top:40px;margin-bottom: 30px;color:hsla(0, 0%, 100%, 0.75) ;}
+    .content{width:380px;flex: none;text-align:left;font-size: 15px;font-family: 'Inter', sans-serif;font-weight: 400;margin-left: 30px;
+    margin-left: auto;margin-right: auto;line-height: 25px;margin-bottom: 40px;color: hsla(0, 0%, 100%, 0.6)    ;}
+    .grid{display: grid;grid-template-columns: repeat(3,126px);justify-content: center;grid-template-areas:
+      "a b c "
+      "d e f ";font-family: 'Lexend Deca', sans-serif;}
+    .a{
+        grid-column: 1;
+        grid-row: 1;
+        grid-area:a;
+        font-size: 20px;
+        color:hsla(0, 0%, 100%, 0.75) ;
+        font-weight: 700;
+        margin-bottom: 8px;
+    }
+    .b{
+        grid-column: 2;
+        grid-row: 1;
+        grid-area:b;
+        font-size: 20px;
+        color:hsla(0, 0%, 100%, 0.75) ;
+        font-weight: 700;
+        margin-bottom: 8px;
+    }
+    .c{
+        grid-column: 3;
+        grid-row: 1;
+        grid-area:c;
+        font-size: 20px;
+        color:hsla(0, 0%, 100%, 0.75) ;
+        font-weight: 700;
+        margin-bottom: 8px;
+    }
+    .d{
+        grid-column: 1;
+        grid-row: 2;
+        grid-area:d;
+        color: hsla(0, 0%, 100%, 0.6);
+        font-weight: 200;
+        font-size: 12px;
+    }
+    .e{
+        grid-column: 2;
+        grid-row: 2;
+        grid-area:e;
+        color: hsla(0, 0%, 100%, 0.6);
+        font-weight: 200;
+        font-size: 12px;
+    }
+    .f{
+        grid-column: 3;
+        grid-row: 2;
+        grid-area:f;
+        color: hsla(0, 0%, 100%, 0.6);
+        font-weight: 200;
+        font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="outside">
+  <div class="inside">
+  <div class="title">Get <span style="color: hsl(277, 64%, 61%);">insights</span> that help your business grow.</div>
+  <div class="content">
+  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+  experience, and overall efficiency.
+  </div>
+  <div class="grid">
+  <div class="a">10k+</div> 
+  <div class="b">314</div> 
+  <div class="c">12M+</div> 
+  <div class="d">COMPANIES</div>
+  <div class="e">TEMPLATES</div>
+  <div class="f">QUERIES</div>
+  </div>
+  </div>
+  <img src="./images/image-header-desktop.jpg">
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">CHENG YU CHU</a>.
+  </div>
+</body>
+</html>
