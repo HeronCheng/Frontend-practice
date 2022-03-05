@@ -16,7 +16,7 @@
     .attribution a { color: hsl(228, 45%, 44%); }
     body{background-color: hsl(233, 47%, 7%);}
     .outside{width: 1000px;margin-top: 180px;margin-left: auto;margin-right: auto;background-color: hsl(244, 38%, 16%);display: flex;
-    border-radius: 5px;}
+    flex-direction:row-reverse;border-radius: 5px;}
     .inside{flex: auto;}
     img{width:470px;border-radius:0px 5px 5px 0px ;flex: none;filter:sepia() saturate(600%) hue-rotate(245deg) brightness(.7)
       opacity(0.7) contrast(0.8);}
@@ -78,10 +78,28 @@
         font-weight: 200;
         font-size: 12px;
     }
+    @media screen and (max-width:375px) {
+      .grid{grid-template-areas:
+        "a a a"
+        "d d d"
+        "b b b" 
+        "e e e"
+        "c c c"
+        "f f f";justify-items: center;}
+        .f{margin-bottom: 30px;}
+        .e{margin-bottom: 25px;}
+        .d{margin-bottom: 25px;}
+        .outside{display: block;width: 344px;margin-top: 80px}
+        img{border-radius:5px 5px 0px 0px ;width: 344px;}
+        .title{font-size:26px;text-align: center;width: 270px;}
+        .content{width: 270px;text-align: center;}
+        
+    }
   </style>
 </head>
 <body>
   <div class="outside">
+  <img src="./images/image-header-desktop.jpg">
   <div class="inside">
   <div class="title">Get <span style="color: hsl(277, 64%, 61%);">insights</span> that help your business grow.</div>
   <div class="content">
@@ -97,7 +115,7 @@
   <div class="f">QUERIES</div>
   </div>
   </div>
-  <img src="./images/image-header-desktop.jpg">
+  
   </div>
   
   <div class="attribution">
