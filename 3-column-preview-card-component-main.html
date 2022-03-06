@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | 3-column preview card component</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+    body{background-color: hsl(0, 0%, 95%);}
+    .attribution { font-size: 11px; text-align: center; margin-top: 15px;font-family: 'Lexend Deca', sans-serif;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+    img{margin-bottom: 25px;margin-top: 35px;}
+    .outside{display: grid;width: 840px;grid-template-columns: repeat(3,280px);justify-content: center;grid-template-areas:
+      "a b c";margin-left: auto;margin-right: auto;margin-top: 150px;}
+    .a{background-color: hsl(31, 77%, 52%);border-radius:7px 0px 0px 7px;height: 453px;}
+    .b{background-color: hsl(184, 100%, 22%);height: 453px;}
+    .c{background-color: hsl(179, 100%, 13%);border-radius:0px 7px 7px 0px;height: 453px;}
+    .inside{width: 200px;margin-left: auto;margin-right: auto;}
+    .title{font-family: 'Big Shoulders Display', cursive;color:hsl(0, 0%, 95%);font-size: 32px;margin-bottom: 25px;}
+    .content{font-family: 'Lexend Deca', sans-serif;color:hsla(0, 0%, 100%, 0.75);font-size: 15px;margin-bottom: 85px;line-height: 25px;}
+    .one{color:hsl(31, 77%, 52%);}
+    .two{color:hsl(184, 100%, 22%);}
+    .three{color:hsl(179, 100%, 13%);}
+    .button{font-family: 'Lexend Deca', sans-serif;background-color:hsl(0, 0%, 95%) ;width: 100px;border-radius: 20px;padding: 10px;font-size: 15px;text-align: center;margin-bottom: 35px;}
+    .one:hover{background-color:hsl(31, 77%, 52%);color:hsla(0, 0%, 100%, 0.75);border: 2px solid;border-color:  hsla(0, 0%, 100%, 0.75);cursor: pointer; }
+    .two:hover{background-color:hsl(184, 100%, 22%);color:hsla(0, 0%, 100%, 0.75);border: 2px solid;border-color:  hsla(0, 0%, 100%, 0.75);cursor: pointer;}
+    .three:hover{background-color:hsl(179, 100%, 13%);color:hsla(0, 0%, 100%, 0.75);border: 2px solid;border-color:  hsla(0, 0%, 100%, 0.75);cursor: pointer;}
+    @media screen and (max-width:375px) {
+      .outside{
+        width:340px;
+        grid-template-columns: repeat(1,340px);
+        grid-template-areas:
+        "a"
+        "b"
+        "c";
+      }
+      .a{border-radius:7px 7px 0px 0px}
+      .c{border-radius:0px 0px 7px 7px}
+    }
+  </style>
+</head>
+<body>
+  <div class="outside">
+  <div class="a">
+  <div class="inside">  
+  <img src="./images/icon-sedans.svg">
+  <div class="title">
+  Sedans
+  </div>
+  <div class="content">
+  Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city 
+  or on your next road trip.
+  </div>
+  <div class="button one">Learn More</div>
+  </div>
+  </div>
+  <div class="b">
+  <div class="inside">
+  <img src="./images/icon-suvs.svg">
+  <div class="title">
+  SUVs
+  </div>
+  <div class="content">
+  Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation 
+  and off-road adventures.
+  </div>
+  <div class="button two">Learn More</div>
+  </div>
+  </div>
+  <div class="c">
+  <div class="inside">
+  <img src="./images/icon-luxury.svg">
+  <div class="title">
+  Luxury
+  </div>
+  <div class="content">
+  Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury 
+  rental and arrive in style.
+  </div>
+  <div class="button three">Learn More</div>
+  </div>
+  </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">CHENG TU CHU</a>.
+  </div>
+</body>
+</html>
