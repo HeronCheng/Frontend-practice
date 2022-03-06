@@ -12,22 +12,30 @@
     @import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
     .attribution { font-size: 11px; text-align: center;margin-top: 20px; font-family: 'Outfit'}
     .attribution a { color: hsl(228, 45%, 44%);font-family: 'Outfit' }
-    body{background-color: hsl(212, 45%, 89%);}
+    body{background-color: hsl(212, 45%, 89%);min-height: 100vh}
     .main{
-      background-color: hsl(0, 0%, 100%);border-radius:10px;width: 240px;padding: 10px;text-align: center;margin-left: auto;
-      margin-right: auto;margin-top: 100px;
+      display: flex;
+      margin: auto;
+      justify-content: center;
+      align-items: center; 
+      width: 240px;
+      
     }
-    img{width: 235px;height: 235px;border-radius:10px}
+    .card{
+      background-color: hsl(0, 0%, 100%);border-radius:10px;padding: 10px;text-align: center;margin-top: 100px;}
+    img{width: 230px;height: 235px;border-radius:10px}
     .text1{font-size: 20px;font-family: 'Outfit';font-weight: 700;color: hsl(218, 44%, 22%);margin-top: 10px;}
     .text2{font-size: 15px;font-family: 'Outfit';font-weight: 400;color: hsl(220, 15%, 55%);margin-top: 15px;}
   </style>
 </head>
 <body>
-  <div class="main">
-    <img src="./images/image-qr-code.png">
-    <div class="text1">Improve your front-end skills by building projects</div>
+  <main class="main">
+    <div class="card">
+    <img src="./images/image-qr-code.png" alt="this is an qr code.">
+    <h1 class="text1">Improve your front-end skills by building projects</h1>
     <div class="text2">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</div>
-  </div>
+    </div>
+  </main>
   
   
   <div class="attribution">
