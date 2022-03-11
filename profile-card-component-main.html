@@ -6,6 +6,135 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Profile card component</title>
   <link rel="stylesheet" type="text/css" href="index.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+.attribution { 
+    font-size: 11px;
+    text-align: center;
+    position: relative;
+    bottom: 720px;
+    }
+.attribution a { color: hsl(228, 45%, 44%); }
+body{
+    background-color: hsl(185, 75%, 39%);
+    font-family:  'Kumbh Sans', sans-serif;
+}
+.top{
+    position: relative;
+    bottom: 850px;
+    right: 200px; 
+    width: 60%;
+    height: 60%;
+    z-index: 10;
+}
+.bottom{
+    position: relative;
+    left: 700px;
+    top:-900px;
+    width: 60%;
+    height: 60%;
+    z-index: 10;
+}
+.card{
+    z-index: 20;
+    position: relative;
+    width: 350px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 13px;
+    top: 150px;
+    -webkit-filter: drop-shadow(12px 12px 7px rgba(27, 27, 27, 0.7));
+    filter: drop-shadow(12px 12px 7px rgba(34, 34, 34, 0.7))
+}
+.img{
+    border-radius: 13px 13px 0px 0px;
+}
+.img1{
+    border-radius: 50%;
+    position: relative;
+    bottom: 55px;
+    left: 120px;
+    border: white 5px solid;
+}
+.line{
+    width: 100%;
+    height: 1px;
+    border-top: solid hsl(0, 0%, 83%) 2px;
+}
+.name{
+    text-align: center;
+    position: relative;
+    bottom: 40px;
+    font-weight: 700;
+    font-size: 18px;
+}
+.age{
+    color:hsl(0, 0%, 59%);
+    margin: 8px;
+}
+.address{
+    text-align: center;
+    color:hsl(0, 0%, 59%);
+    font-weight: 700;
+    position: relative;
+    bottom: 25px;
+    padding-bottom: 5px;
+}
+.flex{
+    display: flex;
+    text-align: center;
+    justify-content: space-around
+}
+.a{
+    margin: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.a-1{
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.a-2{
+    color:hsl(227, 10%, 46%);
+    font-weight: 400;
+    font-size: 12px;
+}
+.b{
+    margin: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.b-1{
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.b-2{
+    color:hsl(227, 10%, 46%);
+    font-weight: 400;
+    font-size: 12px;
+}
+.c{
+    margin: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.c-1{
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.c-2{
+    color:hsl(227, 10%, 46%);
+    font-weight: 400;
+    font-size: 12px;
+}
+  </style>
 </head>
 <body>
   <div class="card">
